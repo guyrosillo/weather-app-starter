@@ -55,7 +55,12 @@ h4 {
 }
 
 .celsius {
+    display: none;
+    justify-content: center;
+}
+.justForButton{
     display: flex;
+    margin-top: 15px;
     justify-content: center;
 }
 
@@ -78,9 +83,9 @@ img{
     height: 150px;
 }
 
-.temp::after{
+/* .temp::after{
     content: "° F";
 }
 .celsius::after{
     content: "° C";
-}
+} */

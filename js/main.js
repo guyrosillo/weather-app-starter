@@ -40,8 +40,8 @@ function getWeather(zipCode){
         dataType: "json",
         success: function(data){
             console.log(data)
-            temp.textContent = kelvinToFar(data.main.temp)
-            celsius.textContent = kelvinToCel(data.main.temp)
+            temp.textContent = kelvinToFar(data.main.temp) + "° F"
+            celsius.textContent = kelvinToCel(data.main.temp) 
             city.textContent = data.name
             weather.textContent = data.weather[0].main
             humidity.textContent = data.main.humidity
@@ -65,12 +65,7 @@ zip.addEventListener('keypress', function(event){
 
 
 document.querySelector('#clearButton').addEventListener('click', function(){
-    var toggyWoggy = document.getElementsByClassName("celsius");
-    if (toggyWoggy.style.display === "none"){
-        toggyWoggy.style.display = "block";
-    }
-    else{
-        toggyWoggy.style.display = "none";
-    }
-    // temp.textContent = celsius.textContent + "° C";
+     temp.textContent = celsius.textContent + "° C";
+     
+
 })
