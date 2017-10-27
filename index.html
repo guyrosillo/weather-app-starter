@@ -1,0 +1,49 @@
+<!-- I spent all night working on the converter button. I continued getting a NaN error until I realized that var temp was giving me this error. It worked when I converted var temp to Number (not parseInt or parseFloat); however, I continued to obtain a negative number. In the end I had to create 
+another function to convert kelvin to celsius. I was working on finally hiding/showing the temperatures, but I needed to sleep. I have also uploaded the HTML page, but as it was.     
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+ <h2 class="city"></h2>
+ <div class="search">
+ 
+ <input type="text" name="zipcode" class="searchBox"></input>
+
+</div>
+<h3>Weather</h3>
+
+<h4 class="weather">
+    This is where the weather goes.
+    </h4>
+<span class="iconSpace">
+<img src="" alt="Icon goes here" class="icon" />
+</span>
+
+
+<h2>Temperature</h2>
+<div class="temp"> </div>
+<div class="celsius"></div>
+<h2>Humidity</h2>
+<span class="humidity">%</span>
+
+
+<button id="clearButton">Try?</button>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

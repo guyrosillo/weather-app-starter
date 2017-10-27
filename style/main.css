@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(178, 236, 240);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS';
+}
+
+h2{
+    color: white;
+    font-size: 48px;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    text-shadow: 3px 3px rgb(59, 59, 59);
+    font-family: Trebuchet MS;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+    background-color: teal;
+    color: white;
+    border: 1px solid black;
+    font-size: 24px;
+    opacity: 0.2;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    font-family: Arial;
+    text-shadow: 3px 3px rgb(59, 59, 59); 
+}
+
+h4 {
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+}
+
+.celsius {
+    display: flex;
+    justify-content: center;
+}
+
+.iconSpace {
+display: flex;
+justify-content: center;
+}
+
+.humidity {
+    display: flex;
+    justify-content: center;
+}
+
+.humidity::after{
+    content: "%";
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.temp::after{
+    content: "° F";
+}
+.celsius::after{
+    content: "° C";
+}
